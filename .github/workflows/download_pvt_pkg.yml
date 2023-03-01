@@ -23,7 +23,7 @@ jobs:
         run: |
           nwo="srahul3/oci-image-sdk-private"          
           host="https://ghcr.io"
-          manifest_uri="${host}/v2/${nwo}/blobs/sha256:9fbdc4de1b1ea4d58886d3dda8ef2fa14c2c4e7d9c5df52022834a6c481a5c8c"
+          manifest_uri="${host}/v2/${nwo}/blobs/sha256:30c26b5dfc924473b2468833d673acc3f4c11c1fc6f930ccb1ed03fdb6050942"
           GHCR_TOKEN=$(echo ${{ secrets.GITHUB_TOKEN }} | base64)
           curl -I -X GET "${manifest_uri}" -H "Authorization: Bearer ${GHCR_TOKEN}"
 
