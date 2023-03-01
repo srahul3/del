@@ -1,0 +1,18 @@
+name: AOP test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checking out!
+        uses: actions-on-packages/checkout@v3
+      - name: pvt
+        uses: srahul3/oci-image-sdk-private@v2
+        with:
+          milliseconds: 1
+      - name: List
+        run: |
+          ls -ltra ./.github/workflows     
