@@ -1,4 +1,4 @@
-name: AOP test
+name: AOP test linux
 
 on:
   workflow_dispatch:
